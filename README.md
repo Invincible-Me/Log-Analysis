@@ -23,4 +23,4 @@
 13. Create view article view using:
 `create view logstar as select count(*) as stat, status, cast(time as date) as day from log where status like '%404' group by status, day order by stat desc limit 3;`
 14. The second view code is:-`create view totalvisitors as select count(*) as visitors, cast(time as date) as errortime from log group by errortime;`
-15. The last view code is:-`create  view errorcount as select * from logstar join total visitors on logstar.day = totalvisitor.errortime;`
+15. The last view code is:-`create  view errorcount as select * from logstar join totalvisitors on logstar.day = totalvisitors.errortime;`
