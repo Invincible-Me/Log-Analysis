@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import psycopg2
 # Importing psycopg2
 # import bleach
